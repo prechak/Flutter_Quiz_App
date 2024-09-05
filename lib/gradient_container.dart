@@ -38,19 +38,16 @@ class GradientContainer extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 40),
-              child: TextButton(
-                onPressed: null,
+              child: TextButton.icon(
                 style: TextButton.styleFrom(
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular((8)))),
                   foregroundColor: Colors.white,
-                  textStyle: const TextStyle(
-                    fontSize: 20,
-                    backgroundColor: Color.fromARGB(125, 124, 77, 255),
-                  ),
+                  backgroundColor: Colors.pinkAccent,
+                  textStyle: const TextStyle(fontSize: 16),
                 ),
-                child: const Text(
-                  'Start Quiz',
-                  style: TextStyle(color: Colors.white),
-                ),
+                onPressed: () {},
+                label: const Text('Start Quiz'),
               ),
             )
           ],
