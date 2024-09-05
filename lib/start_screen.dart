@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key, required this.color});
+class StartScreen extends StatelessWidget {
+  const StartScreen({super.key, required this.color});
 
   final List<Color> color;
 
@@ -22,6 +22,7 @@ class GradientContainer extends StatelessWidget {
             Image.asset(
               'assets/images/quiz-logo.png',
               width: 200,
+              color: Colors.white70,
             ),
             const SizedBox(
               height: 20,
@@ -47,6 +48,7 @@ class GradientContainer extends StatelessWidget {
                   textStyle: const TextStyle(fontSize: 16),
                 ),
                 onPressed: () {},
+                icon: const Icon(Icons.arrow_right),
                 label: const Text('Start Quiz'),
               ),
             )
